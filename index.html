@@ -41,21 +41,22 @@
   <!-- Hero: Kural, name, photo, intro, buttons + catalogue card -->
   <div class="hero">
     <div>
-     <p class="kural">
-  <span>கற்க கசடறக் கற்பவை</span>
-  <span>கற்றபின் நிற்க அதற்குத் தக.</span>
-</p>
-
-<div class="gloss">
-  <p class="ta-meaning">கற்கத் தகுந்தவற்றைப் பிழையின்றித் தெளிவாகக் கற்று, கற்றபடி நடக்க வேண்டும்.</p>
-  <br>
-  <p class="en-meaning">Learn thoroughly what deserves learning, then live by it.</p>
- 
-</div>
+      <!-- Thirukkural 391: two lines only. Font size is set in style.css from the column width, so it never clips. -->
+      <figure class="kural-fig">
+        <p class="kural" lang="ta"><span>கற்க கசடறக் கற்பவை</span><span>கற்றபின் நிற்க அதற்குத் தக.</span></p>
+        <figcaption class="gloss">
+          <p class="ta" lang="ta">கற்கத் தகுந்தவற்றைப் பிழையின்றித் தெளிவாகக் கற்று, கற்றபடி நடக்க வேண்டும்.</p>
+          <p class="en" lang="en">Learn thoroughly what deserves learning, then live by it.</p>
+          <p class="cite"><span lang="ta">திருக்குறள் 391 · பொருட்பால் · கல்வி</span><span class="sep" aria-hidden="true">|</span><span lang="en">Thirukkural 391 · Porutpaal · Kalvi</span></p>
+        </figcaption>
+      </figure>
 
       <h1>Sebastine Robert S</h1>
-      <img class="avatar" width="180" height="180" fetchpriority="high" alt="Portrait of Sebastine Robert S"
-        src="https://robscornerr.wordpress.com/wp-content/uploads/2024/08/img_20250330_205521__2_-removebg.png?w=360">
+      <img class="avatar" width="180" height="180" fetchpriority="high" decoding="async" alt="Portrait of Sebastine Robert S"
+        src="https://robscornerr.wordpress.com/wp-content/uploads/2024/08/img_20250330_205521__2_-removebg.png?w=360"
+        srcset="https://robscornerr.wordpress.com/wp-content/uploads/2024/08/img_20250330_205521__2_-removebg.png?w=180 180w,
+                https://robscornerr.wordpress.com/wp-content/uploads/2024/08/img_20250330_205521__2_-removebg.png?w=360 360w"
+        sizes="180px">
       <p class="lede">Library Trainee at the Central Library, IIT Madras. I build library automation, institutional repositories and the self-hosted Linux servers that keep them running.</p>
       <div class="acts">
         <a class="btn" href="projects.html">See live services</a>
@@ -81,9 +82,7 @@
 <div><h3>Self-hosted infrastructure</h3><p>Debian servers behind Nginx with Let’s Encrypt TLS, Docker Compose stacks, and n8n workflows for academic content.</p><div class="pills"><span class="pill">Debian</span><span class="pill">Nginx</span><span class="pill">Docker</span><span class="pill">n8n</span></div></div>
 </div>
 </main>
-  
-  <br>
-  
+
 <!-- ===== FOOTER ===== -->
 <footer><div class="wrap"><span>© 2026 Sebastine Robert S, Chennai, India</span><span>Hosted on Debian Linux, secured with Nginx and Cloudflare</span></div></footer>
 

@@ -162,7 +162,7 @@ const grid = document.getElementById("grid"), lb = document.getElementById("lb")
 function draw() {
   document.querySelectorAll("#gtabs button").forEach(b => b.setAttribute("aria-selected", b.dataset.g === set));
   grid.innerHTML = SETS[set].map((p, i) => `<figure class="shot"><button type="button" data-i="${i}" aria-label="Open ${p.title}">
-    <img src="${p.src}" alt="${p.title}" loading="lazy"></button><figcaption>${p.title}</figcaption></figure>`).join("");
+    <img src="${p.src}" alt="${p.title}" width="400" height="300" loading="lazy" decoding="async"></button><figcaption>${p.title}</figcaption></figure>`).join("");
 }
 /* Show picture n in the lightbox (wraps around at both ends) */
 function show(n) {
