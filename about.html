@@ -24,8 +24,8 @@
 <a class="mark" href="index.html">Robert’s Corner</a>
 <nav aria-label="Primary">
 <a href="index.html">Home</a>
+<a href="about.html">About</a>
 <a href="projects.html">Projects</a>
-<a href="about.html" aria-current="page">About</a>
 <a href="gallery.html">Gallery</a>
 <a href="resume.html">Resume</a>
 <a href="contact.html">Contact</a>
@@ -43,20 +43,19 @@
 
 <!-- Tabs (content is drawn by the script below) -->
 <div class="tabs" role="tablist" id="tabs">
-<button role="tab" type="button" data-t="work" aria-selected="true">Work and study</button>
+
+<button role="tab" type="button" data-t="work" aria-selected="true">Work</button>
+
+<button role="tab" type="button" data-t="education" aria-selected="true">Education</button>
 <button role="tab" type="button" data-t="intern" aria-selected="false">Internships</button>
 <button role="tab" type="button" data-t="pubs" aria-selected="false">Conference papers</button>
 <button role="tab" type="button" data-t="skills" aria-selected="false">Skills</button>
 </div>
 <div id="tabbody" role="tabpanel"></div>
 
-<!-- Where to next -->
-<h2 class="pg sec">Next</h2>
-<p class="sub">See the work in pictures, take the one-page resume, or send a message.</p>
-<p class="acts"><a class="btn" href="resume.html">Resume</a><a class="btn alt" href="gallery.html">Gallery</a><a class="btn alt" href="contact.html">Contact</a></p>
-</main>
 
 <!-- ===== FOOTER ===== -->
+<br>
 <footer><div class="wrap"><span>© 2026 Sebastine Robert S, Chennai, India</span><span><a href="index.html">Back to home</a></span></div></footer>
 
 <button class="totop" id="totop" type="button" aria-label="Back to top">↑</button>
@@ -66,15 +65,22 @@
 <script>
 /* Timeline data per tab: [date, title, description] */
 const TABS = {
+
   work: [
     ["April 2025 to present", "Library Trainee, Central Library, IIT Madras", "Supporting academic library operations, ILS workflows, digital resource management and technical services."],
     ["Earlier", "Bishop Heber College, Tiruchirappalli", "Library operations and academic support services."],
+],
+
+education: [
     ["Enrolled July 2026", "PGDLAN, IGNOU", "Post Graduate Diploma in Library Automation Networking."],
+
     ["Completed", "M.Lib.I.Sc., Master of Library and Information Science", "Two-year integrated postgraduate programme. Cumulative 82.79%, weighted average 79.53%."]
   ],
+
   intern: [
     ["May 2024, one month", "Library Intern, IIT Madras", "Cataloguing with MARC21 and UDC, Virtua ILS for circulation and RFID, shelving and collection rectification."],
     ["June 2024, one week", "Library Intern, Indian Institute of Astrophysics", "Patron services, shelving, Koha cataloguing and circulation, and daily library management."],
+
     ["November 2023, one week", "Library Intern, Tamil Nadu National Law University", "Patron services, shelving, Koha cataloguing and circulation, and daily library management."],
     ["December 2022, one month", "Intern, District Central Library, Tiruchirappalli", "Shelving, classification and book-keeping of library transactions."]
   ],
