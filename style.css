@@ -123,6 +123,16 @@ nav a[aria-current="page"] { color: var(--green-ink); background: var(--green); 
 
 .avatar { display: block; width: 180px; height: 180px; object-fit: cover; border-radius: 50%; background: var(--chip); margin-top: 1.4rem; }
 .lede { color: var(--soft); max-width: 34rem; margin-top: .8rem; font-size: 1.05rem; }
+.social-strip { display: flex; align-items: center; flex-wrap: wrap; gap: 1.15rem; margin-top: 1.1rem; }
+.social-strip a { display: inline-flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; border-radius: 50%; transition: transform .18s ease, opacity .18s ease; }
+.social-strip a:hover { transform: translateY(-2px); opacity: .75; }
+.social-strip img { display: block; width: 22px; height: 22px; object-fit: contain; }
+:root[data-theme="dark"] .social-strip a[aria-label="GitHub"] img,
+:root[data-theme="dark"] .social-strip a[aria-label="X"] img { filter: invert(1); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .social-strip a[aria-label="GitHub"] img,
+  :root:not([data-theme="light"]) .social-strip a[aria-label="X"] img { filter: invert(1); }
+}
 .acts { display: flex; gap: .7rem; flex-wrap: wrap; margin-top: 1.6rem; }
 
 /* Catalogue card / MARC record (ruled-paper look) */
